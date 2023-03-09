@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<beans  
+
+   xmlns = "http://www.springframework.org/schema/beans" 
+
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
+
+   xmlns:context="http://www.springframework.org/schema/context" 
+
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans 
+   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+   http://www.springframework.org/schema/context  
+   http://www.springframework.org/schema/context/spring-context-4.0.xsd"> 
+
+  <!--  <bean id="vehicle" class="com.ansar.ansartech.Car"></bean> --> 
+
+  <!--  <bean id="vehicle" class="com.ansar.ansartech.Bike"></bean> -->
+  
+    <bean id="MySpring" class="com.ty.spring_core_simple_xml_project.MySpring1"></bean>
+    <bean id="saini" class="com.ty.spring_core_simple_xml_project.Student"></bean>
+    <bean id="setterinjection" class="com.ty.spring_core_simple_xml_project_setter_getter.StudentDetails" >
+    <property name="id" value="123"></property>
+    <property name="name" value="Ankit"></property>
+    <property name="email" value="saini@gmail.com"></property>
+    </bean>
+    <bean id="constructorinjection" class="com.ty.spring_core_simple_xml_project_constructor.Laptop">
+    <constructor-arg index="0" value="1"></constructor-arg>
+    <constructor-arg index="1" value="hp"></constructor-arg>
+    <constructor-arg index="2" value="black"></constructor-arg>
+    </bean>
+
+</beans> 
